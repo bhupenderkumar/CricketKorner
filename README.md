@@ -1,5 +1,1 @@
-VitamioDemo
-===========
-
-The demo sample is a showcase of the functionality of Vitamio.
-
+Its a live streaming application integrated with Vitamio Bundle
