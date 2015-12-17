@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cricketkorner.cricket"
+    android:versionCode="1"
+    android:versionName="1" >
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> 
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/> 
+	<uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    
+    <application
+        android:allowBackup="false"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/vitamio_demo_name">
+
+        <!-- Don't forgot InitActivity -->
+        <activity
+            android:name="io.vov.vitamio.activity.InitActivity"
+            android:configChanges="orientation|screenSize|smallestScreenSize|keyboard|keyboardHidden|navigation"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+         
+        <activity android:name="com.cricketkorner.cricket.VitamioListActivity" 
+          android:configChanges="orientation|screenSize|smallestScreenSize|keyboard|keyboardHidden|navigation"
+            android:launchMode="singleTop"   ><!-- android:noHistory="true" -->
+         	<intent-filter>
+	                <action android:name="android.intent.action.MAIN" /> 
+	                <category android:name="android.intent.category.DEFAULT" />
+	                <category android:name="android.intent.category.LAUNCHER" />
+	            </intent-filter>
+	    </activity>
+        
+        <activity android:name="com.startapp.android.publish.list3d.List3DActivity"
+          android:taskAffinity="com.devtuts.footballworldcup.AppWall"
+          android:theme="@android:style/Theme" />
+
+		<activity android:name="com.startapp.android.publish.AppWallActivity"
+          android:theme="@android:style/Theme.Translucent"
+          android:taskAffinity="com.devtuts.footballworldcup.AppWall"            
+          android:configChanges="orientation|keyboardHidden" />
+        <activity
+            android:name="com.cricketkorner.cricket.MediaPlayerDemo"
+            android:label="Media/MediaPlayer" >
+        </activity>
+        <activity
+            android:name="com.cricketkorner.cricket.VideoViewDemo"
+            android:configChanges="orientation|screenSize|smallestScreenSize|keyboard|keyboardHidden|navigation"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+             >
+        </activity>
+        <activity
+            android:name="com.cricketkorner.cricket.MediaPlayerDemo_Video"
+            android:label="Media/MediaPlayer" >
+        </activity>
+        <activity
+            android:name="com.cricketkorner.cricket.MediaPlayerDemo_setSurface"
+            android:label="Media/MediaPlayer" >
+        </activity>
+        <activity
+            android:name="com.cricketkorner.cricket.MediaPlayerDemo_Audio"
+            android:label="Media/MediaPlayer" >
+        </activity>
+        <activity
+            android:name="com.cricketkorner.cricket.MediaMetadataRetrieverDemo"
+            android:label="Media/MediaMetadata" >
+        </activity>
+        <activity
+            android:name="com.cricketkorner.cricket.MediaPlayerSubtitle"
+            android:label="@string/title_activity_media_player_subtitle" >
+        </activity>
+        <activity
+            android:name="com.cricketkorner.cricket.VideoViewSubtitle"
+            android:label="@string/title_activity_video_view_subtitle" >
+        </activity>
+        <activity
+            android:name="com.cricketkorner.cricket.VideoSubtitleList"
+            android:label="@string/title_activity_video_subtitle_list" >
+        </activity>
+        <activity
+            android:name="com.cricketkorner.cricket.VideoViewBuffer"
+            android:label="@string/title_activity_video_buffer" >
+        </activity>
+    </application>
+
+</manifest>

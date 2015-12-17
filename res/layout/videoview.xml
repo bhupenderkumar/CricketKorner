@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+     android:id="@+id/adLayout" >
+  
+	    <io.vov.vitamio.widget.VideoView
+	        android:id="@+id/surface_view"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent" 
+	        android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+	        android:layout_above="@+id/startAppBanner1" />
+ 
+ <com.startapp.android.publish.banner.Banner
+        android:id="@+id/startAppBanner1"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+ 
+</RelativeLayout>
