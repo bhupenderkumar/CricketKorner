@@ -351,7 +351,7 @@ public class VitamioListActivity extends Activity {
 				public void onClick(DialogInterface dialog, int whichButton) {
 				  String value = input.getText().toString();
 					  if(isNetworkAvailable()){
-						  new ReportFeedback().execute("http://ahmadshahwaiz.com/LiveStreaming/reportFeedback.php",value,Singleton.getInstance().getChannelList().get(position).getChannelId());
+						  new ReportFeedback().execute("http://yoururl.com/LiveStreaming/reportFeedback.php",value,Singleton.getInstance().getChannelList().get(position).getChannelId());
 					   }
 				  }
 				});
