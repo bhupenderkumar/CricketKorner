@@ -21,8 +21,8 @@ public class  Singleton {
 	}
 	 
 
-	public void addChannelModelObject(ChannelModel quizResultModelObj) {
-		 channelModel.add(quizResultModelObj);
+	public void addChannelModelObject(ChannelModel channelModelObj) {
+		 channelModel.add(channelModelObj);
 	}
 	public Vector<ChannelModel> getChannelList() {
 		 return channelModel;
